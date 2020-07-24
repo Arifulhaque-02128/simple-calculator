@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+</head>
+<body >
+    <div class="calculator">
+        <h1 class="text-center text-primary my-5">Calculator</h1>
+        <div class="container bg-light w-lg-25">
+            <div class="row  align-items-center justify-content-center">
+                <div class="textField mx-1 my-3">
+                    <input type="text" name="" id="displayBoard" class="form-control">
+                </div>
+            </div>
+            <div class="row  align-items-center justify-content-center">
+                <div class="key">
+                    <div class="col px-0"><button class = "btn btn-dark px-3" onclick="hide()">Hide</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col px-0"><button class = "btn btn-dark px-3" onclick="del()">DEL</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col px-0"><button class = "btn btn-dark px-3" onclick = "clr()">AC</button></div>
+                </div>
+                    
+            </div>
+            <div class="row  align-items-center justify-content-center">
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(7)">7</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(8)">8</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(9)">9</button></div>
+                </div>
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display('/')">/</button></div>
+                </div>
+
+            </div>
+
+            <div class="row  align-items-center justify-content-center">
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(4)">4</button></div>
+                </div>
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(5)">5</button></div>
+                </div>
+
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(6)">6</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display('*')">*</button></div>
+                </div>   
+                    
+            </div>
+
+            <div class="row  align-items-center justify-content-center">
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(1)">1</button></div>
+                </div>
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(2)">2</button></div>
+                </div>
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(3)">3</button></div>
+                </div>   
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display('-')">-</button></div>
+                </div>
+            
+            </div>
+
+            <div class="row  align-items-center justify-content-center">
+                
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display(0)">0</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display('.')">.</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = "result()">=</button></div>
+                </div>
+                    
+                <div class="key">
+                    <div class="col-3 px-0"><button class = "btn btn-dark px-3" onclick = " display('+')">+</button></div>
+                </div>
+                    
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="getCalculator">
+        <div class="row justify-content-center mt-5">
+            <button class="btn btn-success mt-5" onclick="getCal()">Get Calculator Again</button>
+        </div>
+    </div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
